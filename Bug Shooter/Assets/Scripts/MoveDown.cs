@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveDown : MonoBehaviour {
 
-    float speed = 5f;
+    public float speed = 5f;
 
 	// Use this for initialization
 	void Start () {

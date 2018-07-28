@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
         float halfPlayerWidth = (transform.localScale.x / 2f) + .5f;
         float halfPlayerHeight = (transform.localScale.y / 2f) + .5f;
 
-        screenHalfWidth = Camera.main.aspect * Camera.main.orthographicSize + halfPlayerWidth;
+        screenHalfWidth = Camera.main.aspect * Camera.main.orthographicSize - halfPlayerWidth;
         screenHalfHeight = Camera.main.aspect * Camera.main.orthographicSize - halfPlayerHeight;
 
 
@@ -45,11 +45,11 @@ public class PlayerController : MonoBehaviour
 
         if (transform.position.x < -screenHalfWidth)
         {
-            transform.position = new Vector3(screenHalfWidth, transform.position.y, transform.position.z);
+            transform.position = new Vector3(-screenHalfWidth, transform.position.y, transform.position.z);
         }
         if (transform.position.x > screenHalfWidth)
         {
-            transform.position = new Vector3(-screenHalfWidth, transform.position.y, transform.position.z);
+            transform.position = new Vector3(screenHalfWidth, transform.position.y, transform.position.z);
         }
     }
 }
