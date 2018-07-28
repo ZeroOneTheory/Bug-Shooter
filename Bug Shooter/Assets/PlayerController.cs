@@ -7,13 +7,17 @@ public class PlayerController : MonoBehaviour {
     public float health = 5.0f;
     public float speed = 7.0f;
 
+    float verticalBuffer = .04f;
+    float screenHalfWidth;
 
 
-	// Use this for initialization
-	void Start () { 
+
+    // Use this for initialization
+    void Start () {
+        screenHalfWidth = Camera.main.aspect * Camera.main.orthographicSize;
 
 
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -30,5 +34,14 @@ public class PlayerController : MonoBehaviour {
     
     // Applys move amount to the players position
     transform.Translate(moveAmount);
-}
+
+    if(transform.position.x < -screenHalfWidth)
+        {
+            transform.position = new Vector3(screenHalfWidth, transform.position.y, transform.position.z);
+        }
+    if (transform.position.x >screenHalfWidth)
+        {
+            transform.position = new Vector3(-screenHalfWidth, transform.position.y, transform.position.z);
+        }
+    }
 }
