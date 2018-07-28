@@ -4,7 +4,103 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Ant01_L
+    100004: Ant01_R
+    100006: Ant02_L
+    100008: Ant02_R
+    100010: AntBase_L
+    100012: AntBase_R
+    100014: AntBulb_L
+    100016: AntBulb_R
+    100018: Arm01_L
+    100020: Arm01_R
+    100022: ArmBase_L
+    100024: ArmBase_R
+    100026: BODY
+    100028: Bug_Main_Rig
+    100030: Cannon_L
+    100032: Cannon_R
+    100034: Fang01_L
+    100036: Fang01_R
+    100038: Fang02_L
+    100040: Fang02_R
+    100042: HEAD
+    100044: LegB01_L
+    100046: LegB01_R
+    100048: LegB02_L
+    100050: LegB02_R
+    100052: LegB03_L
+    100054: LegB03_R
+    100056: LegF01_L
+    100058: LegF01_R
+    100060: LegF02_L
+    100062: LegF02_R
+    100064: LegF03_L
+    100066: LegF03_R
+    100068: LegM01_L
+    100070: LegM01_R
+    100072: LegM02_L
+    100074: LegM02_R
+    100076: LegM03_L
+    100078: LegM03_R
+    100080: Sphere
+    100082: Spine01
+    100084: Spine02
+    100086: Spine03
+    100088: Spine04
+    100090: Spine05
+    100092: Stinger
+    100094: wing_L
+    100096: wing_R
     400000: //RootNode
+    400002: Ant01_L
+    400004: Ant01_R
+    400006: Ant02_L
+    400008: Ant02_R
+    400010: AntBase_L
+    400012: AntBase_R
+    400014: AntBulb_L
+    400016: AntBulb_R
+    400018: Arm01_L
+    400020: Arm01_R
+    400022: ArmBase_L
+    400024: ArmBase_R
+    400026: BODY
+    400028: Bug_Main_Rig
+    400030: Cannon_L
+    400032: Cannon_R
+    400034: Fang01_L
+    400036: Fang01_R
+    400038: Fang02_L
+    400040: Fang02_R
+    400042: HEAD
+    400044: LegB01_L
+    400046: LegB01_R
+    400048: LegB02_L
+    400050: LegB02_R
+    400052: LegB03_L
+    400054: LegB03_R
+    400056: LegF01_L
+    400058: LegF01_R
+    400060: LegF02_L
+    400062: LegF02_R
+    400064: LegF03_L
+    400066: LegF03_R
+    400068: LegM01_L
+    400070: LegM01_R
+    400072: LegM02_L
+    400074: LegM02_R
+    400076: LegM03_L
+    400078: LegM03_R
+    400080: Sphere
+    400082: Spine01
+    400084: Spine02
+    400086: Spine03
+    400088: Spine04
+    400090: Spine05
+    400092: Stinger
+    400094: wing_L
+    400096: wing_R
     2100000: Body
     2100002: BodyFeatures
     2100004: Dark
@@ -14,7 +110,10 @@ ModelImporter:
     3300000: //RootNode
     4300000: Sphere
     7400000: Default Take
+    7400002: Flying
     9500000: //RootNode
+    13700000: Sphere
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1

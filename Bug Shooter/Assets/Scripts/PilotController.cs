@@ -11,6 +11,6 @@ public class PilotController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Rotate(Input.GetAxisRaw("Vertical"),0.0f, Input.GetAxisRaw("Horizontal"));
+        transform.Rotate(Input.GetAxisRaw("Vertical"),0.0f, -Input.GetAxisRaw("Horizontal"));
 	}
 }
