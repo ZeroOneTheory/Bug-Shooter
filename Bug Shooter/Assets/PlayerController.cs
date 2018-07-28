@@ -9,12 +9,17 @@ public class PlayerController : MonoBehaviour {
 
     float verticalBuffer = .04f;
     float screenHalfWidth;
+    float screenHalfHeight;
 
 
 
     // Use this for initialization
     void Start () {
-        screenHalfWidth = Camera.main.aspect * Camera.main.orthographicSize;
+        float halfPlayerWidth = (transform.localScale.x / 2f)+.5f;
+        float halfPlayerHeight = (transform.localScale.y / 2f) + .5f;
+
+        screenHalfWidth = Camera.main.aspect * Camera.main.orthographicSize + halfPlayerWidth;
+        screenHalfHeight = Camera.main.aspect * Camera.main.orthographicSize - halfPlayerHeight;
 
 
     }
@@ -43,5 +48,6 @@ public class PlayerController : MonoBehaviour {
         {
             transform.position = new Vector3(-screenHalfWidth, transform.position.y, transform.position.z);
         }
-    }
 }
+    
+
