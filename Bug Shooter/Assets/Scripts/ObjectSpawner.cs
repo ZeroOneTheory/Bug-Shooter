@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RockSpawner : MonoBehaviour {
+public class ObjectSpawner : MonoBehaviour {
 
     public GameObject rockPrefabs;
 
     Vector3 screenHalfSize;
     public float secondsBetweenSpawn = 1;
+    public float spawnLayer = -25;
     float nextSpawnTime;
 
 
@@ -23,7 +24,7 @@ public class RockSpawner : MonoBehaviour {
         if (Time.time > nextSpawnTime)
         {
             nextSpawnTime = Time.time + secondsBetweenSpawn;
-            Vector3 spawnPosition = new Vector3(Random.Range(-screenHalfSize.x, screenHalfSize.x), -25, screenHalfSize.y);
+            Vector3 spawnPosition = new Vector3(Random.Range(-screenHalfSize.x, screenHalfSize.x), spawnLayer, screenHalfSize.y);
             Instantiate(rockPrefabs, spawnPosition, Quaternion.identity);
 
         }
