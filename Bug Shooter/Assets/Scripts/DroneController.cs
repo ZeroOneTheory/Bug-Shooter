@@ -20,7 +20,7 @@ public class DroneController : MonoBehaviour {
         MovementClampSpeed();
         MovementSwerve();
 
-        FxSoundMove();
+        //FxSoundMove();
 
 
         rb.AddRelativeForce(Vector3.up * upForce);

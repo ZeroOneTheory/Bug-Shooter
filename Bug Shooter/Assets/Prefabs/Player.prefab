@@ -105,7 +105,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4933487454613954}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4256815745593278
 Transform:
@@ -118,7 +118,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4933487454613954}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!4 &4666311292406856
 Transform:
@@ -156,8 +156,8 @@ Transform:
   m_LocalPosition: {x: -0.04, y: 11.32, z: -10.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4256815745593278}
   - {fileID: 4235345493278064}
+  - {fileID: 4256815745593278}
   - {fileID: 4855981705655662}
   - {fileID: 4666311292406856}
   m_Father: {fileID: 0}
@@ -235,7 +235,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 927b6258d042f234796264821ecfcb8f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -328,10 +328,10 @@ Animator:
   m_GameObject: {fileID: 1893562090292244}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 7a94191594a557f43ad943caab774708, type: 3}
-  m_Controller: {fileID: 9100000, guid: 57b39d7c61531d54d84a558ac158fcdb, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
