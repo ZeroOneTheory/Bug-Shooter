@@ -16,7 +16,7 @@ public class GunScript : MonoBehaviour {
     private float waitTilFire = 0.0f;
     void Shooting()
     {
-        if (Input.GetKey(KeyCode.U))
+        if (Input.GetKey(KeyCode.Space))
         {
             if (waitTilFire <= 0)
             {
