@@ -6,6 +6,10 @@ public class DroneController : MonoBehaviour {
 
     Rigidbody rb;
 
+    private float zInputRaw;
+    private bool isLeft;
+    private bool isRight;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -14,13 +18,18 @@ public class DroneController : MonoBehaviour {
 
     private void FixedUpdate()
     {
+
+        zInputRaw = Mathf.Abs(Input.GetAxisRaw("ZAxis"));
+        if (zInputRaw < 0) { isLeft = true; } else if (zInputRaw > 0) { isRight = true; }
+        if (zInputRaw == 0) { isLeft = false; isRight = false; }
+
         MovementUpDown();
         MovementForward();
         MovementRotation();
         MovementClampSpeed();
         MovementSwerve();
 
-        //FxSoundMove();
+        FxSoundMove();
 
 
         rb.AddRelativeForce(Vector3.up * upForce);
